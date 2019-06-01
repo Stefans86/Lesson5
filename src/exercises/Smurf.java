@@ -1,12 +1,5 @@
 package exercises;
 
-/* 
- * 1. Watch this smurf cartoon: https://www.youtube.com/watch?v=RqbpzEHuO2g
- * 2. In a Runner class, make a Handy Smurf. Use the methods below to make him eat, and print his name.
- * 
- * 5. Make a Papa Smurf and print his name, hat color and girl or boy.
- * 6. Make a Smurfette and print her name, hat color and girl or boy. */
-
 public class Smurf {
 
 	private String name;
@@ -16,26 +9,60 @@ public class Smurf {
 	}
 
 	public String getName() {
-		return "My name is " + name + " Smurf.";
+		return "Hi, my name is " + name + " Smurf." + " Welcome to SmurfLand.";
+
 	}
 
-	public void eat() {
-		System.out.println(name + " Smurf is eating Smurfberries.");
+	public String Eating() {
+
+		if (this.name.equals("Handy")) {
+			return "Sorry that i dont't have time to show you around, cause i need to go to eat.";
+		} else {
+			return "Not hungry. ";
+		}
 	}
 
-	/* Papa Smurf wears a red hat, all the others are white. */
-	public String getHatColor() {
-		// 3. Fill in this method
-		return "";
+	public String HatColor() {
+
+		if (this.name.equals("Papa Smurf")) {
+			return "I wear a red hat cause i'm the chief around here.";
+		} else {
+			return "I wear a white hat";
+		}
 	}
 
-	/* Smurfette is the only female Smurf. */
-	public String isGirlOrBoy() {
-		// 4. Fill in this method
-		return "";
+	public String IsGirlOrBoy() {
+
+		if (this.name.equals("Smurfette")) {
+			return "I'am a only girl in village.";
+		} else {
+			return "I am a boy and it's obvious around here cause of hat (Man world).";
+		}
+
+	}
+
+	public String KnowToCook() {
+
+		if (this.name.equals("Smurfette")) {
+			return "Don't dare to think cause im girl i need to know to cook? Think again!";
+		} else {
+			return "I know to cook cause there is no other way not to starve to death.";
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Smurf HandySmurf = new Smurf("Handy");
+
+		System.out.println(HandySmurf.getName() + " " + HandySmurf.Eating());
+
+		Smurf PapaSmurf = new Smurf("Papa Smurf");
+		System.out.println(PapaSmurf.getName() + " " + PapaSmurf.HatColor() + " " + PapaSmurf.IsGirlOrBoy() + " "
+				+ PapaSmurf.KnowToCook());
+
+		Smurf SmurfetteSmurf = new Smurf("Smurfette");
+		System.out.println(SmurfetteSmurf.getName() + " " + SmurfetteSmurf.HatColor() + " and "
+				+ SmurfetteSmurf.IsGirlOrBoy() + " " + SmurfetteSmurf.KnowToCook());
 	}
 
 }
-
-
-

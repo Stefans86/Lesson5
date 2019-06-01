@@ -1,4 +1,7 @@
+
 package exercises;
+
+
 /* 
  * Use the Gridworld Reference document in the "doc" directory to complete the following tasks;
  * 
@@ -11,4 +14,8 @@ package exercises;
  * 7. Fill the whole world with flowers!
 */
 
-public class Gridworld {}
+public class Gridworld {
+	
+
+	
+}
